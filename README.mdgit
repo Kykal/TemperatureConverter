@@ -1,8 +1,9 @@
-Webpage that converts temperatures.
+# Temperature converter
+
 
 Temperatures availables:
 
-· Celsius degrees.
-· Farhenheit degrees.
-· Kelvin
-· Rankine
+- Celsius degrees.
+- Farhenheit degrees.
+- Kelvin
+- Rankine
