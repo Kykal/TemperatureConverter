@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="Dev" content="Alan Benavides">
+        
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="KLogo_1080.ico" type="image/x-icon">
+
+        <title>Temperature converter</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <header>
+                <span>You have found an easter egg!</span>
+                <h1>Temperature converter</h1>
+                <br>
+            </header>
+
+            <div class="row2">
+                <p>
+                    <h2>Temperature</h2>
+                    <span class="txt">
+                        From: <input type="number" placeholder="0" step="any" id="number">
+                        <select name="selectTemp1" id="selectTemp1">
+                            <option value="ºC">ºC</option>
+                            <option value="ºF">ºF</option>
+                            <option value="K">K</option>
+                            <option value="R">R</option>
+                        </select>
+                        to
+                        <select name="selectTemp2" id="selectTemp2">
+                            <option value="ºC">ºC</option>
+                            <option value="ºF">ºF</option>
+                            <option value="K">K</option>
+                            <option value="R">R</option>
+                        </select>
+                    </span>
+                    <br><br>
+                    <span>
+                        <button onclick="convert()">CONVERT</button>
+                    </span>
+                </p>
+            </div>
+
+            <div class="row3">
+                <span id="res1"></span>
+                <br><br>
+                <span id="res2"></span>
+            </div>
+
+            <script src="script.js"></script>
+        </div>
+    </body>
+</html>
