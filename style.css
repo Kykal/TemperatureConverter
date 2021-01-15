@@ -13,7 +13,7 @@ h1 {
 .wrapper {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-auto-rows: repeat(3, 1fr);
+    grid-auto-rows: 1fr 1fr 0.5fr 0.5fr;
     row-gap: 5%;
 }
 
@@ -45,8 +45,40 @@ button {
 }
 
 .row3 {
-    grid-column: 2 / 5;
+    grid-column: 1 / 6;
     grid-row: 3;
-    text-align: center;
     font-size: larger;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 0.05fr 1fr;
+}
+
+td, table {
+    border: 1px solid wheat;
+}
+
+.row3 > #c1r1 {
+    grid-column: 1;
+    grid-row: 1;
+    text-align: right;
+}
+
+.row3 > #c2r1 {
+    grid-column: 2/3;
+    grid-row: 1;
+    text-align: center;
+}
+
+.row3 > #c3r1 {
+    grid-column: 3 / 4;
+    grid-row: 1;
+    text-align: left;
+}
+
+#alrt {
+    grid-row: 4;
+    grid-column: 2 / 5;
+    text-align: center;
+    font-size: large;
+    border-radius: 10px;
 }
